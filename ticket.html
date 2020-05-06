@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zoo Project</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="bootstrap-4.3.1-dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/history.css" />
+		<link rel="stylesheet" type="text/css" href="css/ticket.css" />
+		<link rel="stylesheet" type="text/css" href="css/event.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+		<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+		<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+		<script src="jquery/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/ticket.js"></script>
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
+					<img id="logo" src="images/download.png" />
+				</div>
+				<div class="col-sm-4">
+					<h1 id="heading">Green Gates Zoo</h1>
+				</div>
+				<div class="col-sm-5">
+					<div class="row">
+						<div class="col-sm-2 main-links">
+							<a href="D:/HTML%20project/index.html">Home</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="D:/HTML%20project/history.html">History</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="D:\HTML%20project\ticket.html"
+								><span class="activelink">Tickets</span></a
+							>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="D:\HTML%20project\event.html">Events</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="D:\HTML%20project\gallery.html">Gallery</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="D:\HTML%20project\contactus.html"
+								>Contact Us</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="hori-line" />
+		</header>
+		<div
+			class="container-fluid"
+			style="
+				background-image: url(images/images.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			"
+		>
+			<div class="row">
+				<div class="container-fluid">
+					<div class="row main-row">
+						<div class="col-sm-6 arrange">
+							<form
+								class="form1"
+								style="background-color: black;"
+							>
+								<div class="row row-arrange">
+									<h2>Ticket Booking</h2>
+								</div>
+								<div class="row row-arrange">
+									<div class="col-sm-4">
+										<label>Full Name:</label>
+									</div>
+									<div class="col-sm-7 arrange">
+										<input
+											class="form-control"
+											type="text"
+											placeholder="Enter Your Full Name"
+										/>
+									</div>
+								</div>
+
+								<div class="row row-arrange">
+									<div class="col-sm-4">
+										<label>Email:</label>
+									</div>
+									<div class="col-sm-7 arrange">
+										<input
+											class="form-control"
+											type="email"
+											placeholder="Enter Your Email"
+										/>
+									</div>
+								</div>
+								<div class="row row-arrange">
+									<div class="col-sm-4 arrange">
+										<label
+											>Date of Booking:
+											"Eg:12/09/2020"</label
+										>
+									</div>
+									<div class="col-sm-7 arrange">
+										<input
+											class="form-control"
+											type="date"
+										/>
+									</div>
+								</div>
+								<div class="row">
+									<label>Person</label>
+								</div>
+								<div class="row row-arrange">
+									<div class="col-sm-4 arrange">
+										<label>Indian: </label>
+									</div>
+									<div class="col-sm-5 arrange">
+										<input
+											type="text"
+											class="tickets"
+											id="indian-ticket"
+											value="0"
+											disabled
+										/>
+									</div>
+									<div class="col-sm-1 arrange">
+										<img
+											src="images/ticket/plus.png"
+											onclick="increase1()"
+										/>
+									</div>
+
+									<div class="col-sm-1 arrange">
+										<img
+											src="images/ticket/minus.png"
+											onclick="decrease1()"
+										/>
+									</div>
+								</div>
+								<div class="row row-arrange">
+									<div class="col-sm-4 arrange">
+										<label>Foreigner: </label>
+									</div>
+									<div class="col-sm-5 arrange">
+										<input
+											type="text"
+											class="tickets"
+											id="foreign-ticket"
+											value="0"
+											disabled
+										/>
+									</div>
+									<div class="col-sm-1 arrange">
+										<img
+											src="images/ticket/plus.png"
+											onclick="increase2()"
+										/>
+									</div>
+
+									<div class="col-sm-1 arrange">
+										<img
+											src="images/ticket/minus.png"
+											onclick="decrease2()"
+										/>
+									</div>
+								</div>
+
+								<div class="row row-arrange">
+									<div class="col-sm-4">
+										<label>Net Payable Amount: </label>
+									</div>
+									<div class="col-sm-5 arrange">
+										<input
+											class="tickets"
+											id="amount"
+											type="text"
+											value="0"
+											disabled
+										/>
+									</div>
+								</div>
+								<div class="row row-arrange">
+									<input
+										class="form-control"
+										type="submit"
+										value="Submit"
+									/>
+								</div>
+							</form>
+						</div>
+
+						<div class="col-sm-1"></div>
+						<div class="col-sm-4">
+							<div class="video-div">
+								<video id="ad-video" controls>
+									<source
+										src="videos/zoo-tour.mp4"
+										type="video"
+									/>
+									<source
+										src="videos/zoo-tour.mp4"
+										type="video/ogg"
+									/>
+								</video>
+							</div>
+						</div>
+					</div>
+					<div class="row div2">
+						<div class="col-sm-4">
+							<h2>Criteria</h2>
+							<br />
+							<p>
+								* Indian:- 50/-<br />
+								* Foreigner:- 300/- <br />
+								Note:- (No ticket charge on child below 5)
+							</p>
+						</div>
+						<div class="col-sm-8">
+							<h2>Instructions</h2>
+							<br />
+							<p>
+								(1.) "Enter the Full Name" in ticket booking
+								section<br />
+								(2.) "Enter your Email" on which you will
+								receive the tickets<br />
+								(3.) Mention the date of your visit<br />
+								(4.) Mention the person as per the
+								citizenship<br />
+								(5.) Prove of citizenship must be shown at the
+								time of entry<br />
+								(6.) Pay the net total and the tickets are
+								delivered to your given email
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid footer">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="images/logo.png " />
+				</div>
+				<div class="col-sm-6">
+					<h4 id="copyright">
+						Shwetank Mishra||Copyright&copy;2020 - All Rights
+						Reserved.
+					</h4>
+				</div>
+				<div class="col-sm-3">
+					<pre id="details">
+Green Gates Zoological Park
+Mob.: 9696228048
+Tel.: 0510-2842700
+greengateszoo@gmail.com</pre
+					>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

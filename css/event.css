@@ -1,0 +1,53 @@
+#free-height {
+	height: 20%;
+}
+#content4 {
+	height: 12%;
+	padding: 20px;
+}
+#notice-board {
+	overflow: hidden;
+	height: 525px;
+	width: 100%;
+}
+#paperimg {
+	width: 100%;
+	height: max-content;
+}
+#main-content {
+	width: 100%;
+	overflow: hidden;
+}
+#grid-row {
+	width: auto;
+	height: 33.33%;
+}
+#grid-col {
+	width: auto;
+	height: auto;
+}
+#grid-img {
+	width: 100%;
+	border: greenyellow 5px solid;
+	border-radius: 10px;
+}
+
+#img-text {
+	color: greenyellow;
+	margin-left: 100%;
+	padding: 40%;
+	font-family: "Times New Roman", Times, serif;
+}
+#marquee-container {
+	border-top: 10px;
+	padding-top: 30px;
+	border-bottom: 10px;
+	margin-bottom: 10px;
+	border-color: rgb(153, 255, 0);
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-radius: 020px;
+}
+.container-name div {
+	display: inline-block;
+}

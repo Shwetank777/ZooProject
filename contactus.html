@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zoo Project</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="bootstrap-4.3.1-dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/history.css" />
+		<link rel="stylesheet" type="text/css" href="css/ticket.css" />
+		<link rel="stylesheet" type="text/css" href="css/event.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+		<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+		<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+		<script src="jquery/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/contactus.js"></script>
+	</head>
+
+	<body>
+		<header class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
+					<img id="logo" src="images/download.png" />
+				</div>
+				<div class="col-sm-4">
+					<h1 id="heading">Green Gates Zoo</h1>
+				</div>
+				<div class="col-sm-5">
+					<div class="row">
+						<div class="col-sm-2 main-links">
+							<a href="index.html">Home</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="history.html">History</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="ticket.html">Tickets</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="event.html">Events</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="gallery.html">Gallery</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="contactus.html#"
+								><span class="activelink">Contact Us</span></a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="hori-line" />
+		</header>
+		<div
+			class="container-fluid back"
+			style="
+				background-image: url(images/contacts/back.jpg);
+				background-repeat: no-repeat;
+			"
+		>
+			<div class="msg-part">
+				<div class="row heading1">
+					<h1>Contact Us:-</h1>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-7 verti-line">
+						<div class="row">
+							<form id="msg-form">
+								<input
+									class="form-control"
+									type="text"
+									placeholder="Your Name"
+								/>
+								<br />
+								<input
+									class="form-control"
+									type="email"
+									placeholder="Your Email"
+								/><br />
+								<textarea
+									class="form-control"
+									type="text"
+									row="4"
+									col="50"
+									placeholder="enter your message...."
+								></textarea>
+								<br />
+								<input type="submit" value="Submit" />
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="row heading2">
+							<div class="col-sm-3">
+								<a href="mailto:greengateszoo@gmail.com"
+									><img
+										src="images/contacts/emailsymbol.png"
+									/>
+								</a>
+							</div>
+							<div class="col-sm-6">
+								<a href="mailto:greengateszoo@gmail.com"
+									><h6 class="heading3">
+										greengateszoo@gmail.com
+									</h6>
+								</a>
+							</div>
+						</div>
+						<div class="row heading2">
+							<div class="col-sm-6">
+								<a href="tel:05102842700">
+									<img
+										src="images/contacts/callsymbol1.png"
+									/>
+								</a>
+							</div>
+							<div class="col-sm-6">
+								<a href="tel:05102842700"
+									><h6 class="heading3">
+										[0510]-2842700
+									</h6></a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h1>Core Member:-</h1>
+				<div class="row" id="myrow">
+					<div class="col-sm-2" id="mycol">
+						<a
+							onmouseover="magnify(document.getElementById('img1'),document.getElementById('img1-mag'))"
+							onmouseout="minify(document.getElementById('img1-mag'))"
+						>
+							<img
+								class="myimg"
+								id="img1"
+								src="images/contacts/shwetank.jpg"
+								alt="Shwetank"
+						/></a>
+					</div>
+					<div class="col-sm-5" id="maindetail">
+						<address>
+							<h4>Shwetank Mishra</h4>
+							<h6>(Head Manager)</h6>
+							<br />
+							<b>M.No.:</b>
+							<a type="Tel" href="tel:9696228048">9696228048</a
+							><br />
+							<b>Email:-</b>
+							<a
+								type="email"
+								href="mailto:shwetank.mishra100@gmail.com"
+								>shwetank.mishra100@gmail.com</a
+							>
+						</address>
+					</div>
+					<div class="col-sm-5">
+						<span><img class="mag-container" id="img1-mag" /></span>
+					</div>
+				</div>
+				<div class="row" id="myrow">
+					<div class="col-sm-2" id="mycol">
+						<a
+							onmouseover="magnify(document.getElementById('img2'),document.getElementById('img2-mag'))"
+							onmouseout="minify(document.getElementById('img2-mag'))"
+						>
+							<img
+								class="myimg"
+								id="img2"
+								src="images/contacts/anshul.jpg"
+								alt="Anshul"
+						/></a>
+					</div>
+					<div class="col-sm-5" id="maindetail">
+						<address>
+							<h4>Anshul Dwivedi</h4>
+							<h6>(Co-Manager)</h6>
+							<br />
+							<b>M.No.:</b>
+							<a type="Tel" href="tel:9711513058">9711513058</a
+							><br />
+							<b>Email:-</b>
+							<a
+								type="email"
+								href="mailto:dwivedianshul456@gmail.com"
+								>dwivedianshul456@gmail.com</a
+							>
+						</address>
+					</div>
+					<div class="col-sm-5">
+						<span><img class="mag-container" id="img2-mag" /></span>
+					</div>
+				</div>
+				<div class="row" id="myrow">
+					<div class="col-sm-2" id="mycol">
+						<a
+							onmouseover="magnify(document.getElementById('img3'),document.getElementById('img3-mag'))"
+							onmouseout="minify(document.getElementById('img3-mag'))"
+						>
+							<img
+								class="myimg"
+								id="img3"
+								src="images/contacts/sundram.png"
+								alt="Sundram"
+						/></a>
+					</div>
+					<div class="col-sm-5" id="maindetail">
+						<address>
+							<h4>Sundram Gubrele</h4>
+							<h6>(Secretary)</h6>
+							<br />
+							<b>M.No.:</b>
+							<a type="Tel" href="tel:7745944089">7745944089</a
+							><br />
+							<b>Email:-</b>
+							<a
+								type="email"
+								href="mailto:sundramgubrele8989@gmail.com"
+								>sundramgubrele8989@gmail.com</a
+							>
+						</address>
+					</div>
+					<div class="col-sm-5">
+						<span><img class="mag-container" id="img3-mag" /></span>
+					</div>
+				</div>
+				<div class="row" id="myrow">
+					<div class="col-sm-2" id="mycol">
+						<a
+							onmouseover="magnify(document.getElementById('img4'),document.getElementById('img4-mag'))"
+							onmouseout="minify(document.getElementById('img4-mag'))"
+						>
+							<img
+								class="myimg"
+								id="img4"
+								src="images/contacts/shivam.jpg"
+								alt="Shivam"
+						/></a>
+					</div>
+					<div class="col-sm-5" id="maindetail">
+						<address>
+							<h4>Shivam Shrivastav</h4>
+							<h6>(Co-Secretary)</h6>
+							<br />
+							<b>M.No.:</b>
+							<a type="Tel" href="tel:7225842998">7225842998</a
+							><br />
+							<b>Email:-</b>
+							<a
+								type="email"
+								href="mailto:shivamshrivastav6266@gmail.com"
+								>shivamshrivastav6266@gmail.com</a
+							>
+						</address>
+					</div>
+					<div class="col-sm-5">
+						<span><img class="mag-container" id="img4-mag" /></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid footer">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="images/logo.png " />
+				</div>
+				<div class="col-sm-6">
+					<h4 id="copyright">
+						Shwetank Mishra||Copyright&copy;2020 - All Rights
+						Reserved.
+					</h4>
+				</div>
+				<div class="col-sm-3">
+					<pre id="details">
+Green Gates Zoological Park
+Mob.: 9696228048
+Tel.: 0510-2842700
+greengateszoo@gmail.com</pre
+					>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

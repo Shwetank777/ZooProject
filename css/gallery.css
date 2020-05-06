@@ -1,0 +1,46 @@
+.gal-container {
+	padding: 10%;
+}
+.gal-div img {
+	width: 100%;
+}
+.empty {
+	padding: 13%;
+}
+
+.col1:hover {
+	box-shadow: 0px 0px 10px 5px red;
+}
+.col2:hover {
+	box-shadow: 0px 0px 10px 5px blue;
+}
+.col3:hover {
+	box-shadow: 0px 0px 10px 5px rgb(2, 250, 2);
+}
+.col4:hover {
+	box-shadow: 0px 0px 10px 5px yellow;
+}
+.col1 {
+	border: 7px solid rgb(241, 55, 55);
+	border-radius: 50px;
+	min-width: 100%;
+	min-height: 100%;
+}
+.col2 {
+	border: 7px solid rgb(47, 47, 226);
+	min-width: 100%;
+	min-height: 100%;
+	border-radius: 50px;
+}
+.col3 {
+	border: 7px solid rgb(40, 207, 40);
+	min-width: 100%;
+	min-height: 100%;
+	border-radius: 50px;
+}
+.col4 {
+	border: 7px solid rgb(235, 235, 54);
+	min-width: 100%;
+	min-height: 100%;
+	border-radius: 50px;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zoo Project</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="bootstrap-4.3.1-dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/history.css" />
+		<link rel="stylesheet" type="text/css" href="css/ticket.css" />
+		<link rel="stylesheet" type="text/css" href="css/event.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+		<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+		<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+		<script src="jquery/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
+					<img id="logo" src="images/download.png" />
+				</div>
+				<div class="col-sm-4">
+					<h1 id="heading">Green Gates Zoo</h1>
+				</div>
+				<div class="col-sm-5">
+					<div class="row">
+						<div class="col-sm-2 main-links">
+							<a href="index.html">Home</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="history.html">History</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="ticket.html">Tickets</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="event.html#"
+								><span class="activelink">Events</span></a
+							>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="gallery.html">Gallery</a>
+						</div>
+						<div class="col-sm-2 main-links">
+							<a href="contactus.html">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="hori-line" />
+		</header>
+		<div
+			class="container-fluid"
+			style="
+				background-image: url(images/hd.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			"
+		>
+			<!--carausel-->
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<img
+						src="images/zoolight.jpg"
+						style="width: 100%; height: 500px;"
+					/>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 3</div>
+					<img
+						src="images/aqua.jpg"
+						style="width: 100%; height: 500px;"
+					/>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 3</div>
+					<img
+						src="images/easter.jpg"
+						style="width: 100%; height: 500px;"
+					/>
+				</div>
+			</div>
+
+			<div style="text-align: center;">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+			<!--carausel-->
+			<div class="row">
+				<div class="col-sm-4" id="notice-board">
+					<div class="row" id="free-height">
+						<img id="paperimg" src="images/paper.png" />
+					</div>
+					<div class="row" id="content4">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-8" id="main-content">
+							<h4>
+								<marquee
+									direction="right"
+									behavior="alternate"
+									scrollamount="5"
+									><strong>**Notice**</strong></marquee
+								>
+							</h4>
+							<hr />
+							<marquee
+								direction="down"
+								behaviour="slide"
+								scrollamount="4"
+								onmouseover="stop()"
+								onmouseout="start()"
+							>
+								<h6>
+									<hr />
+									* <b>Status:</b> Zoo will remain close till
+									lockdown.
+								</h6>
+
+								<h6>
+									<hr />
+									* <b>Workers Timmig:</b> from 12pm to 5pm.
+								</h6>
+								<h6>
+									<hr />
+									* <b>Keep In Mind:</b> cages may contain
+									high voltage, maintain distance please.
+								</h6>
+								<h6>
+									<hr />
+									* Thowing food & bevrages stuff to the
+									animals are stictly prohibited. (Fine: 1000
+									charged)
+								</h6>
+								<h6>
+									<hr />
+									* Night-Event will be held after 8pm.
+									(Venue: Center-Ground)
+								</h6>
+								<h6>
+									<hr />
+									* Aquarium is under cleaning, remain closed.
+								</h6>
+							</marquee>
+						</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+				<div
+					class="col-sm-8"
+					style="height: 50%;"
+					id="marquee-container"
+				>
+					<div class="row" id="grid-row">
+						<div class="col-sm-4">
+							<marquee
+								direction="left"
+								scrollamount="5"
+								onmouseover="stop()"
+								onmouseout="start()"
+								><div class="container-name">
+									<div class="div1">
+										<img
+											id="grid-img"
+											src="images/nightevent.jpg"
+										/>
+									</div>
+									<div class="div2">
+										<h2 id="img-text">Night-Fare</h2>
+									</div>
+								</div>
+							</marquee>
+						</div>
+						<div class="col-sm-4">
+							<marquee
+								direction="right"
+								scrollamount="3"
+								onmouseover="stop()"
+								onmouseout="start()"
+								><div class="container-name">
+									<div class="div1">
+										<img
+											id="grid-img"
+											src="images/halloven.jpg"
+										/>
+									</div>
+									<div class="div2">
+										<h2 id="img-text">Halloween</h2>
+									</div>
+								</div>
+							</marquee>
+						</div>
+						<div class="col-sm-4">
+							<marquee
+								direction="left"
+								scrollamount="6"
+								onmouseover="stop()"
+								onmouseout="start()"
+								><div class="container-name">
+									<div class="div1">
+										<img
+											id="grid-img"
+											src="images/gallerydesign.jpg"
+										/>
+									</div>
+									<div class="div2">
+										<h2 id="img-text">Wall-Painting</h2>
+									</div>
+								</div>
+							</marquee>
+						</div>
+					</div>
+					<div class="row" id="grid-row">
+						<div class="col-sm-4">
+							<marquee
+								direction="right"
+								scrollamount="4"
+								onmouseover="stop()"
+								onmouseout="start()"
+							>
+								<div class="container-name">
+									<div class="div1">
+										<img
+											id="grid-img"
+											src="images/Event.jpg"
+										/>
+									</div>
+									<div class="div2">
+										<h2 id="img-text">Company-Visit</h2>
+									</div>
+								</div>
+							</marquee>
+						</div>
+						<div class="col-sm-4">
+							<marquee
+								direction="left"
+								scrollamount="5"
+								onmouseover="stop()"
+								onmouseout="start()"
+							>
+								<div class="container-name">
+									<div class="div1">
+										<img
+											id="grid-img"
+											src="images/childvisit.jpg"
+										/>
+									</div>
+									<div class="div2">
+										<h2 id="img-text">Child-Visit</h2>
+									</div>
+								</div>
+							</marquee>
+						</div>
+						<div class="col-sm-4">
+							<marquee
+								direction="right"
+								scrollamount="5"
+								onmouseover="stop()"
+								onmouseout="start()"
+							>
+								<div class="container-name">
+									<div class="div1">
+										<img
+											id="grid-img"
+											src="images/zoovizit.jpg"
+										/>
+									</div>
+									<div class="div2">
+										<h2 id="img-text">Family-Trip</h2>
+									</div>
+								</div>
+							</marquee>
+						</div>
+					</div>
+					<div class="row" id="grid-row">
+						<div class="col-sm-4">
+							<marquee
+								direction="right"
+								scrollamount="10"
+								onmouseover="stop()"
+								onmouseout="start()"
+							>
+								<div class="container-name">
+									<div class="div1">
+										<img
+											id="grid-img"
+											src="images/lightmarch.jpg"
+										/>
+									</div>
+									<div class="div2">
+										<h2 id="img-text">Light-March</h2>
+									</div>
+								</div>
+							</marquee>
+						</div>
+						<div class="col-sm-4">
+							<marquee
+								direction="right"
+								scrollamount="4"
+								onmouseover="stop()"
+								onmouseout="start()"
+							>
+								<div class="container-name">
+									<div class="div1">
+										<img
+											id="grid-img"
+											src="images/the.jpg"
+										/>
+									</div>
+									<div class="div2">
+										<h2 id="img-text">Zoo-Staff</h2>
+									</div>
+								</div>
+							</marquee>
+						</div>
+						<div class="col-sm-4">
+							<marquee
+								direction="left"
+								scrollamount="5"
+								onmouseover="stop()"
+								onmouseout="start()"
+							>
+								<div class="container-name">
+									<div class="div1">
+										<img
+											id="grid-img"
+											src="images/Cover.jpg"
+										/>
+									</div>
+									<div class="div2">
+										<h2 id="img-text">Friendship-Day</h2>
+									</div>
+								</div>
+							</marquee>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid footer">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="images/logo.png " />
+				</div>
+				<div class="col-sm-6">
+					<h4 id="copyright">
+						Shwetank Mishra||Copyright&copy;2020 - All Rights
+						Reserved.
+					</h4>
+				</div>
+				<div class="col-sm-3">
+					<pre id="details">
+Green Gates Zoological Park
+Mob.: 9696228048
+Tel.: 0510-2842700
+greengateszoo@gmail.com</pre
+					>
+				</div>
+			</div>
+		</footer>
+		<script>
+			showSlides();
+		</script>
+	</body>
+</html>
